@@ -5,9 +5,18 @@
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
     <mat-nav-list>
-      <a mat-list-item routerLink="/first-page">First Page</a>
-      <a mat-list-item routerLink="/second-page">Second Page</a>
-      <a mat-list-item routerLink="/third-page">Third Page</a>
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/first-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+        <mat-icon mat-list-icon>home</mat-icon>
+        Home
+      </a>
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/second-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+        <mat-icon matListIcon>lock</mat-icon>
+        Private
+      </a>
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/third-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+        <mat-icon matListIcon>person</mat-icon>
+        Personal
+      </a>
     </mat-nav-list>
   </mat-sidenav>
   <mat-sidenav-content>
@@ -24,6 +33,5 @@
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>
-
   </mat-sidenav-content>
 </mat-sidenav-container>
