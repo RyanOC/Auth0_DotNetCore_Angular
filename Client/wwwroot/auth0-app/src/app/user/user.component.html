@@ -1,0 +1,15 @@
+<div class="main-content">
+    <div><h3>User Info</h3></div>
+    <div>
+      <img src="{{profile?.picture}}" alt="avatar">
+      <div>
+        <mat-icon matListIcon>email</mat-icon>Nickname: 
+        {{ profile?.nickname }}
+      </div>
+      <div>
+        <mat-icon matListIcon>person</mat-icon>Email : 
+        {{ profile?.email }}
+      </div>
+      <pre>{{ profile | json }}</pre>
+    </div>
+  </div>

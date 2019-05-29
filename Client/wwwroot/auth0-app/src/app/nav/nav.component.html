@@ -4,18 +4,27 @@
       [mode]="(isHandset$ | async) ? 'over' : 'side'"
       [opened]="!(isHandset$ | async)">
     <mat-toolbar>Menu</mat-toolbar>
+    <!--mat-divider></mat-divider-->
     <mat-nav-list>
-      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/first-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/home" (click)="toggleDrawer()" routerLinkActive="active-list-item">
         <mat-icon mat-list-icon>home</mat-icon>
         Home
       </a>
-      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/second-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/test" *ngIf="auth.isAuthenticated()" (click)="toggleDrawer()" routerLinkActive="active-list-item">
         <mat-icon matListIcon>lock</mat-icon>
         Private
       </a>
-      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/third-page" (click)="toggleDrawer()" routerLinkActive="active-list-item">
+      <a mat-list-item class="ml-2" style="font-size:15px;" routerLink="/user" *ngIf="auth.isAuthenticated()" (click)="toggleDrawer()" routerLinkActive="active-list-item">
         <mat-icon matListIcon>person</mat-icon>
-        Personal
+        User Info
+      </a>
+      <a mat-list-item class="ml-2" style="font-size:15px;" *ngIf="!auth.isAuthenticated()" (click)="auth.login()">
+        <mat-icon matListIcon style="">exit_to_app</mat-icon>
+        Log In
+      </a>
+      <a mat-list-item class="ml-2" style="font-size:15px;" *ngIf="auth.isAuthenticated()" (click)="auth.logout()">
+        <mat-icon matListIcon style="-webkit-transform: rotate(180deg)">exit_to_app</mat-icon>
+        Log Out
       </a>
     </mat-nav-list>
   </mat-sidenav>

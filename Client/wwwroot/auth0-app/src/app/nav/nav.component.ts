@@ -4,8 +4,7 @@ import { Observable, Subscription } from 'rxjs';
 import { MediaObserver, MediaChange } from '@angular/flex-layout';
 import { map, filter } from 'rxjs/operators';
 import { MatSidenav } from '@angular/material';
-
-
+import { AuthService } from './../_core/services/auth.service';
 
 @Component({
   selector: 'app-nav',
@@ -24,7 +23,7 @@ export class NavComponent {
     watcher: Subscription;
     isMobile: Boolean;
 
-    constructor(private breakpointObserver: BreakpointObserver, mediaObserver: MediaObserver) {
+    constructor(private breakpointObserver: BreakpointObserver, mediaObserver: MediaObserver, public auth: AuthService) {
   
       this.watcher = mediaObserver.asObservable()
       .pipe(

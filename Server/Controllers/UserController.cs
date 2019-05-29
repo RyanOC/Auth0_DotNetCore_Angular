@@ -62,7 +62,7 @@ namespace Server.Controllers
 
         [Authorize]
         [HttpGet]
-        [Route("userid")]
+        [Route("id")]
         public object UserId()
         {
             // The user's ID is available in the NameIdentifier claim
@@ -76,7 +76,7 @@ namespace Server.Controllers
 
         [Authorize]
         [HttpGet]
-        [Route("userinfo")]
+        [Route("info")]
         public async Task<object> UserInformation()
         {
             // Retrieve the access_token claim which we saved in the OnTokenValidated event

@@ -1,0 +1,26 @@
+<div class="main-content">
+  <h1>Make a Call to the Server</h1>
+
+  <p *ngIf="!auth.isAuthenticated()">
+    Log in to call a private (secured) server endpoint.
+  </p>
+  <div class="example-button-row">
+    <button mat-raised-button color="primary"
+            (click)="ping()">
+      Call Public
+    </button>
+    
+    <button mat-raised-button color="primary"
+            (click)="securedPing()"
+            *ngIf="auth.isAuthenticated()">
+      Call Private
+    </button>
+    
+    <button mat-raised-button color="primary"
+            (click)="securedPrivatePing()"
+            *ngIf="auth.isAuthenticated()">
+      Call Private Scope
+    </button>
+  </div>
+  <div>{{ message }}</div>
+</div>

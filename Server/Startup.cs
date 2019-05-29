@@ -29,10 +29,10 @@ namespace Server
             services.AddCors(options =>
             {
                 options.AddPolicy("AllowSpecificOrigin",
-                    policy =>
+                    builder =>
                     {
-                        policy
-                        //.WithOrigins("https://localhost:44366")
+                        builder
+                        //.WithOrigins("https://localhost:44360")
                         .AllowAnyOrigin()
                         .AllowAnyMethod()
                         .AllowAnyHeader()
@@ -97,7 +97,9 @@ namespace Server
 
             app.UseHttpsRedirection();
             app.UseCors("AllowSpecificOrigin");
+
             app.UseStaticFiles();
+
             app.UseAuthentication();
             app.UseMvc();
         }
