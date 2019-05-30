@@ -350,3 +350,4 @@ MigrationBackup/
 
 # compiled angular app
 */wwwroot/dist/
+*/wwwroot/auth0-app/dist
