@@ -1,4 +1,14 @@
-# MyApp
+# Auth0_DotNetCore_Angular
+
+This project was created in part by using the Auth0 documentation, various other blog posts and trial & error.
+
+The first thing you need to do is create a free account on https://auth0.com and follow the steps below:
+
+
+
+![](documentation/images/ss1.png)
+
+<img src="documentation/images/ss1.png" height=50 width=100>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
