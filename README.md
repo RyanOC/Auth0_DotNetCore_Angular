@@ -6,9 +6,10 @@ The first thing you need to do is create a free account on https://auth0.com and
 
 
 
-![](documentation/images/ss1.png)
+![](./Documentation/images/ss1.png)
 
-<img src="documentation/images/ss1.png" height=50 width=100>
+
+<img src="./Documentation/images/ss1.png" height=50 width=100>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.9.
 
