@@ -1,8 +1,11 @@
 import { Injectable } from '@angular/core';
 import { Router } from '@angular/router';
-import { Observable, Observer } from 'rxjs';
+//import { Observable } from 'rxjs';
 import 'rxjs/add/operator/filter';
 import * as auth0 from 'auth0-js';
+import { of } from 'rxjs/observable/of';
+//import { Observable } from 'rxjs/Observable';
+import { Observer, Observable } from 'rxjs/Rx'
 import { environment } from '../../../environments/environment';
 
 (window as any).global = window;
@@ -22,7 +25,10 @@ export class AuthService {
   refreshSubscription: any;
   observer: Observer<boolean>;
   ssoAuthComplete$: Observable<boolean> = new Observable(
-    obs => (this.observer = obs)
+    obs => {
+      console.log(`obs: ${obs}`);
+      (this.observer = obs)
+    }
   );
 
   constructor(public router: Router) { }
@@ -65,6 +71,7 @@ export class AuthService {
     localStorage.setItem('access_token', authResult.accessToken);
     localStorage.setItem('id_token', authResult.idToken);
     localStorage.setItem('expires_at', expiresAt);
+    console.log(`expiresAt: ${new Date(parseInt(expiresAt))}`);
   }
 
   public logout(): void {
@@ -85,6 +92,7 @@ export class AuthService {
 
 
   public renewToken() {
+    console.log('renewToken..login');
     this.auth0.checkSession({},
       (err, result) => {
         if (err) {
@@ -94,20 +102,22 @@ export class AuthService {
           this.login();
         } else {
           this.setSession(result);
-          this.observer.next(true);
+          //this.observer.next(true);
         }
       }
     );
   }
 
-  /*public scheduleRenewal() {
+  public scheduleRenewal() {
     if (!this.isAuthenticated()) return;
     this.unscheduleRenewal();
 
-    const expiresAt = JSON.parse(window.localStorage.getItem('expires_at'));
+    const expiresAt = JSON.parse(window.localStorage.getItem('expires_at')); // 30000
 
     const source = Observable.of(expiresAt).flatMap(expiresAt => {
-      const now = Date.now();
+      const now = Date.now(); // 0
+      var s = new Date(parseInt(expiresAt)).toLocaleTimeString("en-US");
+      console.log(`expiresAt: ${s}`)
 
       // Use the delay in a timer to
       // run the refresh at the proper time
@@ -121,7 +131,7 @@ export class AuthService {
       this.renewToken();
       this.scheduleRenewal();
     });
-  }*/
+  }
 
   public unscheduleRenewal() {
     if (!this.refreshSubscription) return;
@@ -129,4 +139,3 @@ export class AuthService {
   }
 
 }
-

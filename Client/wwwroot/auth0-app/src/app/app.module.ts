@@ -17,6 +17,7 @@ import { AuthService } from './_core/services/auth.service';
 const appRoutes: Routes = [
   { path: 'test', component: TestComponent },
   { path: 'home', component: HomeComponent },
+  { path: 'callback', component: HomeComponent },
   { path: 'user', component: UserComponent }
 ];
 

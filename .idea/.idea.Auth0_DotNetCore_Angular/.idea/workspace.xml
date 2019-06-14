@@ -2,14 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfabd694-c942-46d4-b967-5ef54db983e2" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/contentModel.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/indexLayout.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/riderModule.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Auth0_DotNetCore_Angular.sln" beforeDir="false" afterPath="$PROJECT_DIR$/Auth0_DotNetCore_Angular.sln" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/app/user/user.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/app/user/user.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/environments/environment.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Documentation/images/ss1.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Properties/launchSettings.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Server.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Server.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/Startup.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Startup.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Server/appsettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/appsettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Tests/appsettings.test.json" beforeDir="false" afterPath="$PROJECT_DIR$/Tests/appsettings.test.json" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -21,31 +25,42 @@
     <session id="-1704092728">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="1" />
           <entry key="project.open.time.2" value="1" />
           <entry key="project.opened" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="cs" value="1" />
-          <entry key="json" value="2" />
+          <entry key="cs" value="5" />
+          <entry key="json" value="7" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="C#" value="1" />
-          <entry key="JSON" value="2" />
+          <entry key="C#" value="5" />
+          <entry key="JSON" value="7" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="2" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="2" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Server/Controllers/UserController.cs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+            <state relative-caret-position="165">
+              <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
               <folding>
                 <marker date="1559157599405" expanded="false" signature="6:225" ph="..." />
                 <marker date="1559157599405" expanded="true" signature="255:3217" ph="{...}" />
@@ -70,24 +85,104 @@
           </provider>
         </entry>
       </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Handlers/HasScopeHandler.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="375">
+              <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+              <folding>
+                <marker date="1559157599405" expanded="false" signature="6:90" ph="..." />
+                <marker date="1559157599405" expanded="true" signature="117:988" ph="{...}" />
+                <marker date="1559157599405" expanded="true" signature="196:986" ph="{...}" />
+                <marker date="1559157599405" expanded="true" signature="327:980" ph="{...}" />
+                <marker date="1559157599405" expanded="true" signature="856:930" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Handlers/HasScopeRequirement.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state>
+              <folding>
+                <marker date="1559157599405" expanded="false" signature="6:55" ph="..." />
+                <marker date="1559157599405" expanded="true" signature="82:480" ph="{...}" />
+                <marker date="1559157599405" expanded="true" signature="149:478" ph="{...}" />
+                <marker date="1559157599405" expanded="true" signature="295:472" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/Startup.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="595">
+              <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+              <folding>
+                <marker date="1559349136062" expanded="false" signature="6:410" ph="..." />
+                <marker date="1559349136062" expanded="true" signature="428:3790" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="455:3788" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="514:577" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="800:3197" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="940:1371" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="1042:1355" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="1494:1705" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="1730:2836" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="1932:2821" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="1983:2803" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="2030:2360" ph="/* Grab the raw value of the token, and store it as a claim so we can retrieve it again later in the request pipe ... */" />
+                <marker date="1559349136062" expanded="true" signature="2437:2729" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="2550:2703" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="2888:3051" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="3385:3782" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="3432:3509" ph="{...}" />
+                <marker date="1559349136062" expanded="true" signature="3526:3585" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Server/appsettings.json">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Server/appsettings.Development.json">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
     </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
       <find>5001</find>
+      <find>ApiIdentifier</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Server/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Server/Controllers/UserController.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/Startup.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/Handlers/HasScopeRequirement.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Server/Handlers/HasScopeHandler.cs" root0="FORCE_HIGHLIGHTING" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Server/Properties/launchSettings.json" />
         <option value="$PROJECT_DIR$/Client/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Server/Properties/launchSettings.json" />
+        <option value="$PROJECT_DIR$/Server/Startup.cs" />
+        <option value="$PROJECT_DIR$/Server/appsettings.json" />
       </list>
     </option>
   </component>
@@ -96,6 +191,9 @@
   <component name="JsGulpfileManager">
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="NodeModulesDirectoryManager">
+    <handled-path value="$PROJECT_DIR$/Client/wwwroot/auth0-app/node_modules" />
   </component>
   <component name="ProjectFrameBounds" fullScreen="true">
     <option name="width" value="1680" />
@@ -117,30 +215,19 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Client" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Client" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Properties" type="24d0babc:SolutionExplorerModelNode" />
             </path>
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Handlers" type="24d0babc:SolutionExplorerModelNode" />
             </path>
           </expand>
           <select />
@@ -153,6 +240,7 @@
     <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
     <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../CRM/CRM.sln" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -198,12 +286,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1559158758332</updated>
-      <workItem from="1559158760767" duration="590000" />
+      <workItem from="1559158760767" duration="6027000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="590000" />
+    <option name="totallyTimeSpent" value="6027000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -233,7 +321,7 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.36938775" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.3112245" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -259,28 +347,148 @@
           <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
           <option name="timeStamp" value="1" />
         </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Server/Controllers/UserController.cs</url>
+          <line>80</line>
+          <properties documentPath="$PROJECT_DIR$/Server/Controllers/UserController.cs" initialLine="80">
+            <startOffsets>
+              <option value="2196" />
+            </startOffsets>
+            <endOffsets>
+              <option value="2197" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="3" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Server/Controllers/UserController.cs</url>
+          <line>36</line>
+          <properties documentPath="$PROJECT_DIR$/Server/Controllers/UserController.cs" initialLine="36">
+            <startOffsets>
+              <option value="969" />
+            </startOffsets>
+            <endOffsets>
+              <option value="970" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Server/Handlers/HasScopeHandler.cs</url>
+          <line>11</line>
+          <properties documentPath="$PROJECT_DIR$/Server/Handlers/HasScopeHandler.cs" initialLine="11">
+            <startOffsets>
+              <option value="420" />
+            </startOffsets>
+            <endOffsets>
+              <option value="505" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Server/Controllers/UserController.cs</url>
+          <line>17</line>
+          <properties documentPath="$PROJECT_DIR$/Server/Controllers/UserController.cs" initialLine="17">
+            <startOffsets>
+              <option value="486" />
+            </startOffsets>
+            <endOffsets>
+              <option value="487" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="7" />
+        </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Server/Properties/launchSettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="25" lean-forward="true" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="48" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Client/Properties/launchSettings.json">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="375">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+          <caret line="25" column="3" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1559157599405" expanded="false" signature="6:255" ph="..." />
+            <marker date="1559157599405" expanded="true" signature="273:600" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="300:598" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="353:427" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/appsettings.Development.json">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Startup.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="595">
+          <caret line="87" column="13" lean-forward="true" selection-start-line="87" selection-start-column="13" selection-end-line="87" selection-end-column="13" />
+          <folding>
+            <marker date="1559349136062" expanded="false" signature="6:410" ph="..." />
+            <marker date="1559349136062" expanded="true" signature="428:3790" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="455:3788" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="514:577" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="800:3197" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="940:1371" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="1042:1355" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="1494:1705" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="1730:2836" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="1932:2821" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="1983:2803" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="2030:2360" ph="/* Grab the raw value of the token, and store it as a claim so we can retrieve it again later in the request pipe ... */" />
+            <marker date="1559349136062" expanded="true" signature="2437:2729" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="2550:2703" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="2888:3051" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="3385:3782" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="3432:3509" ph="{...}" />
+            <marker date="1559349136062" expanded="true" signature="3526:3585" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Handlers/HasScopeRequirement.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <marker date="1559157599405" expanded="false" signature="6:55" ph="..." />
+            <marker date="1559157599405" expanded="true" signature="82:480" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="149:478" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="295:472" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Handlers/HasScopeHandler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="375">
+          <caret line="27" lean-forward="true" selection-start-line="27" selection-end-line="27" />
+          <folding>
+            <marker date="1559157599405" expanded="false" signature="6:90" ph="..." />
+            <marker date="1559157599405" expanded="true" signature="117:988" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="196:986" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="327:980" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="856:930" ph="{...}" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Controllers/UserController.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="44" column="33" lean-forward="true" selection-start-line="44" selection-start-column="33" selection-end-line="44" selection-end-column="33" />
+        <state relative-caret-position="165">
+          <caret line="17" column="8" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
           <folding>
             <marker date="1559157599405" expanded="false" signature="6:225" ph="..." />
             <marker date="1559157599405" expanded="true" signature="255:3217" ph="{...}" />
@@ -301,6 +509,13 @@
             <marker date="1559157599405" expanded="true" signature="3026:3209" ph="{...}" />
             <marker date="1559157599405" expanded="true" signature="3121:3196" ph="{...}" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/appsettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
         </state>
       </provider>
     </entry>

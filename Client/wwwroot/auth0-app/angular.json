@@ -63,6 +63,7 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
+            "port": 3000,
             "browserTarget": "auth0-app:build"
           },
           "configurations": {

@@ -74,8 +74,6 @@ namespace Server
 
             services.AddAuthorization(options =>
             {
-                options.AddPolicy("read:messages", policy => policy.Requirements.Add(new HasScopeRequirement("read:messages", domain)));
-                options.AddPolicy("write:messages", policy => policy.Requirements.Add(new HasScopeRequirement("write:messages", domain)));
                 options.AddPolicy("customer_get", policy => policy.Requirements.Add(new HasScopeRequirement("customer_get", domain)));
             });
 

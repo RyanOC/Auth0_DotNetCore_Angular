@@ -10,5 +10,6 @@ export class AppComponent {
   title = 'auth0-app';
   constructor(public auth: AuthService) {
     auth.handleAuthentication();
+    auth.scheduleRenewal();
   }
 }
