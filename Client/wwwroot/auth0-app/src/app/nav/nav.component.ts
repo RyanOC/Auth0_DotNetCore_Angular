@@ -17,7 +17,10 @@ export class NavComponent {
 
   isHandset$: Observable<boolean> = this.breakpointObserver.observe(Breakpoints.Handset)
     .pipe(
-      map(result => result.matches)
+      map(result => { 
+        console.log(result.matches);
+        return result.matches
+      })
     );
 
     watcher: Subscription;
@@ -25,20 +28,48 @@ export class NavComponent {
 
     constructor(private breakpointObserver: BreakpointObserver, mediaObserver: MediaObserver, public auth: AuthService) {
   
-      this.watcher = mediaObserver.asObservable()
-      .pipe(
-        filter((changes: MediaChange[]) => changes.length > 0),
-        map((changes: MediaChange[]) => changes[0])
-      ).subscribe((change: MediaChange) => {
-        //this.activeMediaQuery = change ? `'${change.mqAlias}' = (${change.mediaQuery})` : '';
-        if ( change.mqAlias == 'sm' || change.mqAlias == 'xs') {
+      this.breakpointObserver.observe([
+        Breakpoints.XSmall,
+        Breakpoints.Small,
+        Breakpoints.Medium,
+        Breakpoints.Large,
+        Breakpoints.XLarge
+      ]).subscribe(result => {
+        if (result.breakpoints[Breakpoints.XSmall]) {
           this.isMobile = true;
-        }
-        else{
-          this.isMobile = false;
-          this.drawer.open();
-        }
+         }
+         if (result.breakpoints[Breakpoints.Small]) {
+          this.isMobile = true;
+         }
+         if (result.breakpoints[Breakpoints.Medium]) {
+         this.isMobile = false;
+         }
+         if (result.breakpoints[Breakpoints.Large]) {
+           this.isMobile = false;
+         }
+         if (result.breakpoints[Breakpoints.XLarge]) {
+           this.isMobile = false;
+         }
+
+
       });
+
+      // this.watcher = mediaObserver.asObservable()
+      //   .pipe(
+      //     filter((changes: MediaChange[]) => changes.length > 0),
+      //     map((changes: MediaChange[]) => changes[0])
+      //   ).subscribe((change: MediaChange) => {
+      //     //this.activeMediaQuery = change ? `'${change.mqAlias}' = (${change.mediaQuery})` : '';
+      //     console.log(change.mqAlias);
+      //     if ( change.mqAlias == 'sm' || change.mqAlias == 'xs') {
+      //       //this.isMobile = true;
+      //       //this.drawer.close();
+      //     }
+      //     else{
+      //       //this.isMobile = false;
+      //       //this.drawer.open();
+      //     }
+      //   });
   
     }
 

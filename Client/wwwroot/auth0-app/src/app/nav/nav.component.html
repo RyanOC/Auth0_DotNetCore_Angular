@@ -1,8 +1,8 @@
 <mat-sidenav-container class="sidenav-container" id="main-content">
   <mat-sidenav #drawer class="sidenav" fixedInViewport="true"
-      [attr.role]="(isHandset$ | async) ? 'dialog' : 'navigation'"
-      [mode]="(isHandset$ | async) ? 'over' : 'side'"
-      [opened]="!(isHandset$ | async)">
+      [attr.role]="isMobile ? 'dialog' : 'navigation'"
+      [mode]="isMobile ? 'over' : 'side'"
+      [opened]="!isMobile">
     <mat-toolbar>Menu</mat-toolbar>
     <!--mat-divider></mat-divider-->
     <mat-nav-list>
@@ -35,10 +35,10 @@
         aria-label="Toggle sidenav"
         mat-icon-button
         (click)="drawer.toggle()"
-        *ngIf="isHandset$ | async">
+        *ngIf="isMobile">
         <mat-icon aria-label="Side nav toggle icon">menu</mat-icon>
       </button>
-      <span>auth0-app</span>
+      <span>auth0-app (isHandset$ = {{ isHandset$ | async }})</span>
     </mat-toolbar>
     <!-- Add Content Here -->
     <router-outlet></router-outlet>

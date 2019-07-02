@@ -23,13 +23,13 @@ export class AuthService {
 
   userProfile: any;
   refreshSubscription: any;
-  observer: Observer<boolean>;
-  ssoAuthComplete$: Observable<boolean> = new Observable(
-    obs => {
-      console.log(`obs: ${obs}`);
-      (this.observer = obs)
-    }
-  );
+  // observer: Observer<boolean>;
+  // ssoAuthComplete$: Observable<boolean> = new Observable(
+  //   obs => {
+  //     console.log(`obs: ${obs}`);
+  //     (this.observer = obs)
+  //   }
+  // );
 
   constructor(public router: Router) { }
 
@@ -39,6 +39,10 @@ export class AuthService {
 
   public handleAuthentication(): void {
     this.auth0.parseHash((err, authResult) => {
+
+      console.log('authResult');
+			console.log(authResult);
+
       if (authResult && authResult.accessToken && authResult.idToken) {
         this.setSession(authResult);
         this.router.navigate(['/']);
@@ -112,9 +116,11 @@ export class AuthService {
     if (!this.isAuthenticated()) return;
     this.unscheduleRenewal();
 
+    //const expiresAt = JSON.parse('30000');
     const expiresAt = JSON.parse(window.localStorage.getItem('expires_at')); // 30000
 
     const source = Observable.of(expiresAt).flatMap(expiresAt => {
+      //const now = 0
       const now = Date.now(); // 0
       var s = new Date(parseInt(expiresAt)).toLocaleTimeString("en-US");
       console.log(`expiresAt: ${s}`)
