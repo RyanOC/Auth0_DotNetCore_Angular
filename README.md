@@ -7,21 +7,22 @@ In this example I have a solution that has includes a Dot Net Core API and an An
 
 The first thing you need to do is create a free account on `https://auth0.com` and follow the steps below.
 
+
 ## Auth0 Application
 
 Once you are logged into your Auth0 account, go to your [Dashboard](https://manage.auth0.com/dashboard) and click the `Create Application` button at the top of the page. 
 
 Then select `Single Page Web Applications` and click the `Create` button. Go to the `Settings` tab and you should be presented with the following.
 
-![](documentation/images/myappsettings.png)
-<!--img src="documentation/images/myappsettings.png" width="600" /-->
+![](https://raw.githubusercontent.com/RyanOC/Auth0_DotNetCore_Angular/master/Documentation/images/myappsettings.png)
 
 You may leave the name as the default, but you must add `http://localhost:4200` to the `Allowed Callback URLs`, `Allowed Web Origins`
-, and `Allowed Logout URLs` text areas. Scroll to the bottom of the page and click the blue `Save Changes` button. https for origins and log out urls.
+, and `Allowed Logout URLs` text areas. Scroll to the bottom of the page and click the blue `Save Changes` button.
 
 Once that is done, select the `Connections` tab and turn off the `Username-Password-Authentication` selection since we only want to use Google for right now.
 
 We are done setting up the application portion and will return later to retrieve some values that are stored here.
+
 
 ## Auth0 API
 
@@ -38,29 +39,31 @@ This completes the configuration within your Auth0 dashboard. Now we need to ope
 
 
 ## Client Configuration
+
 inside the solution open 
 `/Client/wwwroot/auth0-app/src/environments/environment.ts`. This file will completed from values within the Auth0 Dashboard's Application that you created above. So go back to your Auth0 dashboard, select `Applications` from the left nav, select `My App` from the list, and select the `Settings` tab. Copy your `Domain` and `Client ID` values and add them to the environment file. These are the values that will be used in the Auth Service located at `Client/wwwroot/auth0-app/src/app/_core/services/auth.service.ts`. It should look like the following except for your custom values: 
 
-<img src="documentation/images/clientenv.png" width="500" />
+![](https://raw.githubusercontent.com/RyanOC/Auth0_DotNetCore_Angular/master/Documentation/images/clientenv.png)
 
 We are done configuring the Client application.
+
 
 ## Server Configuration
 
 The 2 values from above now need to be added to the `Server/appsettings.json` file's `Domain` and `ApiIdentifier` to complete the server configuration. 
 
 
-## Using the Application
-
-x
-
 ## Auth0 User and Permission
 
 Now its time to add a user with the admin permission you created above. The way we are going to do this is let the user sign up by running the app and logging in with their Google account. Once that is done, we will browse back to the Auth0 Dashboard and go to Users. You should see this user in the list. We now need to add the Admin permission so they can access all of the protected Web API endpoints.
 
+
+## Using the Application
+
+(coming soon)
+
+
 ## Bonus
 
-
 An optional step that I tend to do is adding the Permissions to the access token so that the front end can decode the token and view the permissions. This is helpful in hiding links that the user may not have the authorization to use. This is just a convience to the user and does not inhibit the functionality behind these hidden links. 
-
 
