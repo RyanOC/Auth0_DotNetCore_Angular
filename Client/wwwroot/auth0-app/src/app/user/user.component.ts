@@ -23,27 +23,27 @@ export class UserComponent implements OnInit {
   }
 
   ngOnInit() {
-    /*
+    
     this.http.get<any>(`${environment.apiUrl}/user/info`, {
       headers: new HttpHeaders()
         .set('Authorization', `Bearer ${localStorage.getItem('access_token')}`)
     }).subscribe(result => {
       this.profile = result;
     }, error => console.error(error));
-*/
-    var url = `${environment.apiUrl}/user/info`;
-    var token = localStorage.getItem('access_token');
 
-console.log(url);
-console.log(token);
+//     var url = `${environment.apiUrl}/user/info`;
+//     var token = localStorage.getItem('access_token');
 
-    this.http.get(`${environment.apiUrl}/user/info`, {
-      headers: new HttpHeaders()
-        .set('Authorization', `Bearer ${localStorage.getItem('access_token')}`)
-      }).subscribe(
-      data => this.message = (data as IApiResponse).message,
-      error => this.message = error
-    );
+// console.log(url);
+// console.log(token);
+
+//     this.http.get(`${environment.apiUrl}/user/info`, {
+//       headers: new HttpHeaders()
+//         .set('Authorization', `Bearer ${localStorage.getItem('access_token')}`)
+//       }).subscribe(
+//       data => this.message = (data as IApiResponse).message,
+//       error => this.message = error
+//     );
 
   }
 

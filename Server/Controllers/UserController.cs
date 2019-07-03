@@ -8,7 +8,7 @@ using Microsoft.Extensions.Configuration;
 
 namespace Server.Controllers
 {
-    [Route("api/[controller]")]
+    //[Route("api/[controller]")]
     [ApiController]
     public class UserController : Controller
     {
@@ -20,7 +20,17 @@ namespace Server.Controllers
         }
 
         [HttpGet]
-        [Route("public")]
+        [Route("api/user/welcome")]
+        public IActionResult Test()
+        {
+            return Json(new
+            {
+                Message = "Welcome to the User API"
+            });
+        }
+
+        [HttpGet]
+        [Route("api/user/public")]
         public IActionResult Public()
         {
             return Json(new
@@ -29,10 +39,10 @@ namespace Server.Controllers
             });
         }
 
+        [Route("api/user/private")]
+        //[Authorize(Policy = "customer_get")]
         [HttpGet]
-        [Route("private")]
-        [Authorize(Policy = "customer_get")]
-        //[Authorize]
+        [Authorize]
         public IActionResult Private()
         {
             return Json(new
@@ -42,7 +52,7 @@ namespace Server.Controllers
         }
 
         [HttpGet]
-        [Route("private-scoped")]
+        [Route("api/user/private-scoped")]
         //[Authorize(Policy = "read:messages")]
         [Authorize(Policy = "customer_get")]
         public IActionResult Scoped()
@@ -56,13 +66,13 @@ namespace Server.Controllers
 
             return Json(new
             {
-                Message = "Hello from a private endpoint! You need to be authenticated and have a scope of read:messages to see this."
+                Message = "Hello from a private endpoint! You need to be authenticated and have a permission of customer_get to see this."
             });
         }
 
         [Authorize]
         [HttpGet]
-        [Route("id")]
+        [Route("api/user/id")]
         public object UserId()
         {
             // The user's ID is available in the NameIdentifier claim
@@ -76,7 +86,7 @@ namespace Server.Controllers
 
         [Authorize]
         [HttpGet]
-        [Route("info")]
+        [Route("api/user/info")]
         public async Task<object> UserInformation()
         {
             // Retrieve the access_token claim which we saved in the OnTokenValidated event
@@ -97,7 +107,7 @@ namespace Server.Controllers
         /// This is a helper action. It allows you to easily view all the claims of the token
         /// </summary>
         /// <returns></returns>
-        [HttpGet("claims")]
+        [HttpGet("api/user/claims")]
         public IActionResult Claims()
         {
             return Json(User.Claims.Select(c =>

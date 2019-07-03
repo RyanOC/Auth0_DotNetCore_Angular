@@ -4,16 +4,11 @@
 
 export const environment = {
   production: false,
-  //domain: 'ryanoc.auth0.com',
-  //clientID: 'PG2WrE4BIrJW94yS0KDzq3xXj4iWLW35',
-  //callbackURL: 'http://localhost:4200',
-  //audience: 'https://localtesting.com', // 'https://myapp.com',
   apiUrl: 'http://localhost:5000/api',
-
-  audience: '',
-  clientID: 'mQ3hqhd4aaj0XqHB7nXF4y2d1UN4gVSS',
-  domain: '813software.auth0.com',
-  callbackURL: 'http://localhost:3000/callback'
+  clientID: 'PG2WrE4BIrJW94yS0KDzq3xXj4iWLW35',
+  domain: 'ryanoc.auth0.com', 
+  callbackURL: 'http://localhost:4200',
+  audience: 'https://myapp.com'
 };
 
 /*

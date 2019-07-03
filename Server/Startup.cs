@@ -1,6 +1,7 @@
 ﻿using System.IdentityModel.Tokens.Jwt;
 using System.Security.Claims;
 using System.Threading.Tasks;
+using CRM.WebApi.Handlers;
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Builder;
@@ -41,6 +42,7 @@ namespace Server
             });
 
             var domain = $"https://{Configuration["Auth0:Domain"]}/";
+
             services.AddAuthentication(options =>
             {
                 options.DefaultAuthenticateScheme = JwtBearerDefaults.AuthenticationScheme;
@@ -49,8 +51,11 @@ namespace Server
 
             }).AddJwtBearer(options =>
             {
-                options.Authority = domain;
-                options.Audience = Configuration["Auth0:ApiIdentifier"];
+                //options.Authority = domain;
+                //options.Audience = Configuration["Auth0:ApiIdentifier"];
+
+                options.Authority = "https://ryanoc.auth0.com/";
+                options.Audience = "https://myapp.com";
 
                 options.Events = new JwtBearerEvents
                 {
@@ -79,6 +84,8 @@ namespace Server
 
             // register the scope authorization handler
             services.AddSingleton<IAuthorizationHandler, HasScopeHandler>();
+            services.AddMvc();
+            services.AddSingleton<IAuthorizationHandler, RoleListHandler>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

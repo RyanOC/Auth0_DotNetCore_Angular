@@ -18,7 +18,7 @@
         <mat-icon matListIcon>person</mat-icon>
         User Info
       </a>
-      <a mat-list-item class="ml-2" style="font-size:15px;" *ngIf="!auth.isAuthenticated()" (click)="auth.login()">
+      <a mat-list-item class="ml-2" style="font-size:15px;" *ngIf="!auth.isAuthenticated()" (click)="auth.login({allowForgotPassword: true})">
         <mat-icon matListIcon style="">exit_to_app</mat-icon>
         Log In
       </a>
