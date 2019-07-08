@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  apiUrl: 'http://localhost:5000/api',
+  apiUrl: 'https://localhost:5001/api',
   clientID: 'PG2WrE4BIrJW94yS0KDzq3xXj4iWLW35',
   domain: 'ryanoc.auth0.com', 
   callbackURL: 'http://localhost:4200',

@@ -60,7 +60,10 @@ Now its time to add a user with the admin permission you created above. The way 
 
 ## Using the Application
 
-(coming soon)
+Start the web server and run the client project with 
+```
+$ npm start
+```
 
 
 ## Bonus

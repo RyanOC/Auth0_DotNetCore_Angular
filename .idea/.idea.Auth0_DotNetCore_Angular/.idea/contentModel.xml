@@ -65,6 +65,8 @@
         <e p="Handlers" t="Include">
           <e p="HasScopeHandler.cs" t="Include" />
           <e p="HasScopeRequirement.cs" t="Include" />
+          <e p="RoleListHandler.cs" t="Include" />
+          <e p="RoleListRequirement.cs" t="Include" />
         </e>
         <e p="obj" t="ExcludeRecursive">
           <e p="Debug" t="Include">
@@ -74,7 +76,9 @@
           </e>
         </e>
         <e p="Program.cs" t="Include" />
-        <e p="Properties" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="launchSettings.json" t="Include" />
+        </e>
         <e p="Server.csproj" t="IncludeRecursive" />
         <e p="Startup.cs" t="Include" />
       </e>
