@@ -2,11 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cfabd694-c942-46d4-b967-5ef54db983e2" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Auth0_DotNetCore_Angular/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/environments/environment.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/environments/environment.ts" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Server/Properties/launchSettings.json" beforeDir="false" afterPath="$PROJECT_DIR$/Server/Properties/launchSettings.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/app/nav/nav.component.ts" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/app/nav/nav.component.ts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/Client/wwwroot/auth0-app/src/index.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -27,12 +24,14 @@
         <counts>
           <entry key="cs" value="9" />
           <entry key="json" value="8" />
+          <entry key="sln" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="C#" value="9" />
           <entry key="JSON" value="8" />
+          <entry key="Solution File" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
@@ -50,80 +49,7 @@
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Server/Properties/launchSettings.json">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="359">
-              <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Program.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="240">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <marker date="1559157599405" expanded="false" signature="6:255" ph="..." />
-                <marker date="1559157599405" expanded="true" signature="273:600" ph="{...}" />
-                <marker date="1559157599405" expanded="true" signature="300:598" ph="{...}" />
-                <marker date="1559157599405" expanded="true" signature="353:427" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Tests/MachineToMachineTests.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
-              <folding>
-                <marker date="1559157599406" expanded="false" signature="6:111" ph="..." />
-                <marker date="1559157599406" expanded="true" signature="128:1708" ph="{...}" />
-                <marker date="1559157599406" expanded="true" signature="169:1483" ph="{...}" />
-                <marker date="1559157599406" expanded="true" signature="256:518" ph="{...}" />
-                <marker date="1559157599406" expanded="true" signature="623:1477" ph="{...}" />
-                <marker date="1559157599406" expanded="true" signature="646:843" ph="/* https://auth0.com/docs/flows/guides/client-credentials/call-api-client-credentials ... */" />
-                <marker date="1559157599406" expanded="true" signature="1512:1706" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Server/Startup.cs">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
-              <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
-              <folding>
-                <marker date="1562607420663" expanded="false" signature="6:437" ph="..." />
-                <marker date="1562607420663" expanded="true" signature="455:4052" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="482:4050" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="541:604" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="827:3459" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="967:1398" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="1069:1382" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="1522:1733" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="1758:2990" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="1789:1893" ph="/* options.Authority = domain; ... */" />
-                <marker date="1562607420663" expanded="true" signature="2086:2975" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="2137:2957" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="2184:2514" ph="/* Grab the raw value of the token, and store it as a claim so we can retrieve it again later in the request pipe ... */" />
-                <marker date="1562607420663" expanded="true" signature="2591:2883" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="2704:2857" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="3042:3205" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="3647:4044" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="3694:3771" ph="{...}" />
-                <marker date="1562607420663" expanded="true" signature="3788:3847" ph="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -169,6 +95,7 @@
   </component>
   <component name="ProjectView">
     <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <autoscrollToSource SolutionExplorer="true" />
       <autoscrollFromSource SolutionExplorer="true" />
       <foldersAlwaysOnTop value="true" />
     </navigator>
@@ -195,19 +122,18 @@
             <path>
               <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
               <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Controllers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Server" type="24d0babc:SolutionExplorerModelNode" />
-              <item name="Handlers" type="24d0babc:SolutionExplorerModelNode" />
-            </path>
-            <path>
-              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
-              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
               <item name="Tests" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".idea" type="9a108dff:SolutionExplorerFileNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Auth0_DotNetCore_Angular" type="24d0babc:SolutionExplorerModelNode" />
+              <item name=".idea" type="9a108dff:SolutionExplorerFileNode" />
+              <item name=".idea.Auth0_DotNetCore_Angular" type="9a108dff:SolutionExplorerFileNode" />
             </path>
           </expand>
           <select />
@@ -271,7 +197,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="7095000" />
+    <option name="totallyTimeSpent" value="8679000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -284,15 +210,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25274727" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
-      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.3112245" />
+      <window_info anchor="bottom" id="Debug" order="3" visible="true" weight="0.27142859" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -405,9 +330,36 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Auth0_DotNetCore_Angular.sln">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="540">
+          <caret line="36" lean-forward="true" selection-start-line="36" selection-end-line="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Properties/launchSettings.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="405">
+          <caret line="27" column="1" lean-forward="true" selection-start-line="27" selection-start-column="1" selection-end-line="27" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Server/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+          <folding>
+            <marker date="1559157599405" expanded="false" signature="6:255" ph="..." />
+            <marker date="1559157599405" expanded="true" signature="273:600" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="300:598" ph="{...}" />
+            <marker date="1559157599405" expanded="true" signature="353:427" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Tests/MachineToMachineTests.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="231">
+        <state relative-caret-position="270">
           <caret line="24" column="15" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
             <marker date="1559157599406" expanded="false" signature="6:111" ph="..." />
@@ -423,7 +375,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Server/Startup.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="404">
           <caret line="99" column="30" lean-forward="true" selection-start-line="99" selection-start-column="30" selection-end-line="99" selection-end-column="30" />
           <folding>
             <marker date="1562607420663" expanded="false" signature="6:437" ph="..." />
@@ -446,26 +398,6 @@
             <marker date="1562607420663" expanded="true" signature="3694:3771" ph="{...}" />
             <marker date="1562607420663" expanded="true" signature="3788:3847" ph="{...}" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Program.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <marker date="1559157599405" expanded="false" signature="6:255" ph="..." />
-            <marker date="1559157599405" expanded="true" signature="273:600" ph="{...}" />
-            <marker date="1559157599405" expanded="true" signature="300:598" ph="{...}" />
-            <marker date="1559157599405" expanded="true" signature="353:427" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Server/Properties/launchSettings.json">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="359">
-          <caret line="24" column="9" lean-forward="true" selection-start-line="24" selection-start-column="9" selection-end-line="24" selection-end-column="9" />
         </state>
       </provider>
     </entry>

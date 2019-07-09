@@ -6,9 +6,9 @@
   width: 200px;
 }
 
-.sidenav .mat-toolbar {
+/* .sidenav .mat-toolbar {
   background: inherit;
-}
+} */
 
 .mat-toolbar.mat-primary {
   position: sticky;
@@ -16,15 +16,19 @@
   z-index: 1;
 }
 
+.mat-list-item {
+  color: #adadad; 
+} 
+
 .active-list-item {
-  color: #673ab7; /* Note: You could also use a custom theme */
-}
+  color: #fff; 
+} 
 
 .sidenav {
   min-width: 200px;
   max-width: 100%;
 }
 
-.mat-nav-list a.active {
-  background: blue;
+.mat-drawer-side{
+  border: 0px;
 }
