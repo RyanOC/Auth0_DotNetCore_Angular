@@ -74,7 +74,6 @@ export class NavComponent {
     }
 
     toggleTheme(): void {
-
       if (this.overlay.getContainerElement().classList.contains("custom-theme-dark")) {
         this.overlay.getContainerElement().classList.remove("custom-theme-dark");
         this.overlay.getContainerElement().classList.add("custom-theme-light");
@@ -94,7 +93,6 @@ export class NavComponent {
       } else {
         document.body.classList.add("custom-theme-light");
       }
-
     }
 
     toggleDrawer(){

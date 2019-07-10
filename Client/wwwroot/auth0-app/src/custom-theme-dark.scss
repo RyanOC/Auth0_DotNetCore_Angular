@@ -1,20 +1,56 @@
 @import '~@angular/material/theming';
-// Include the common styles for Angular Material. We include this here so that you only
-// have to load a single css file for Angular Material in your app.
-// Be sure that you only ever include this mixin once!
 @include mat-core();
-// Define the palettes for your theme using the Material Design palettes available in palette.scss
-// (imported above). For each palette, you can optionally specify a default, lighter, and darker
-// hue.
+
+$my-dark-theme-background: (
+    status-bar: green,
+    app-bar:    map_get($mat-blue, 900),
+    background: rgb(34, 34, 34),
+    hover:      rgba(white, 0.04), 
+    card:       map_get($mat-red, 800),
+    dialog:     map_get($mat-grey, 800),
+    disabled-button: $white-12-opacity,
+    raised-button: map-get($mat-grey, 800),
+    focused-button: $white-6-opacity,
+    selected-button: map_get($mat-grey, 900),
+    selected-disabled-button: map_get($mat-grey, 800),
+    disabled-button-toggle: black,
+    unselected-chip: map_get($mat-grey, 700),
+    disabled-list-option: black
+);
+
+$my-dark-theme-foreground: (
+  base:              yellow,
+  divider:           $white-12-opacity,
+  dividers:          $white-12-opacity,
+  disabled:          rgba(white, 0.3),
+  disabled-button:   rgba(white, 0.3),
+  disabled-text:     rgba(white, 0.3),
+  hint-text:         rgba(white, 0.3),
+  secondary-text:    rgba(white, 0.7),
+  icon:              white,
+  icons:             white,
+  text:              rgb(255, 255, 255),
+  slider-min:        white,
+  slider-off:        rgba(white, 0.3),
+  slider-off-active: rgba(white, 0.3),
+);
+
+@function create-wonky-theme($primary, $accent, $warn: mat-palette($mat-red)) {
+    @return (
+        primary: $primary,
+        accent: $accent,
+        warn: $warn,
+        is-dark: false,
+        foreground: $my-dark-theme-foreground,
+        background: $my-dark-theme-background,
+    );
+}
+
+
 $app-primary: mat-palette($mat-blue-grey, 500);
 $app-accent: mat-palette($mat-cyan);
-
-// The warn palette is optional (defaults to red).
 $app-warn: mat-palette($mat-red, 400);
 
-// Create the theme object (a Sass map containing all of the palettes).
-$custom-theme-dark: mat-dark-theme($app-primary, $app-accent, $app-warn);
-// Include theme styles for core and each component used in your app.
-// Alternatively, you can import and @include the theme mixins for each component
-// that you are using.
+$custom-theme-dark: create-wonky-theme($app-primary, $app-accent, $app-warn);
+
 @include angular-material-theme($custom-theme-dark);

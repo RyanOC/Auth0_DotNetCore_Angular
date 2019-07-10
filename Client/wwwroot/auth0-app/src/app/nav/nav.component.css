@@ -29,6 +29,7 @@
   max-width: 100%;
 }
 
-.mat-drawer-side{
+ .mat-drawer{
   border: 0px;
-}
+  /* background-color: #ff00ff; */
+} 
