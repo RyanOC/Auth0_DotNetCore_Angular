@@ -2,11 +2,11 @@
 @include mat-core();
 
 $my-dark-theme-background: (
-    status-bar: green,
+    status-bar: rgba(white, 0.04), 
     app-bar:    map_get($mat-blue, 900),
     background: rgb(34, 34, 34),
     hover:      rgba(white, 0.04), 
-    card:       map_get($mat-red, 800),
+    card:       rgba(white, 0.04), 
     dialog:     map_get($mat-grey, 800),
     disabled-button: $white-12-opacity,
     raised-button: map-get($mat-grey, 800),
@@ -19,7 +19,7 @@ $my-dark-theme-background: (
 );
 
 $my-dark-theme-foreground: (
-  base:              yellow,
+  base:              $white-12-opacity,
   divider:           $white-12-opacity,
   dividers:          $white-12-opacity,
   disabled:          rgba(white, 0.3),
@@ -47,8 +47,8 @@ $my-dark-theme-foreground: (
 }
 
 
-$app-primary: mat-palette($mat-blue-grey, 500);
-$app-accent: mat-palette($mat-cyan);
+$app-primary: mat-palette($mat-light-blue, 500);
+$app-accent: mat-palette($mat-blue-grey,);
 $app-warn: mat-palette($mat-red, 400);
 
 $custom-theme-dark: create-wonky-theme($app-primary, $app-accent, $app-warn);

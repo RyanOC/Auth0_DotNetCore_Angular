@@ -14,7 +14,7 @@ $my-light-theme-background: (
     app-bar:    map_get($mat-blue, 900),
     background: rgb(255, 255, 255),
     hover:      rgba(white, 0.04), 
-    card:       map_get($mat-red, 800),
+    card:       rgba(white, 0.04), 
     dialog:     rgba(rgb(233, 233, 233), 1), 
     disabled-button: $white-12-opacity,
     raised-button: map-get($mat-grey, 800),
@@ -55,7 +55,7 @@ $my-light-theme-foreground: (
 }
 
 
-$app-primary: mat-palette($mat-blue);
+$app-primary: mat-palette($mat-light-blue, 0.3);
 $app-accent: mat-palette($mat-orange, A200, A100, A400);
 $app-warn: mat-palette($mat-red);
 
